@@ -1,16 +1,6 @@
 
 
 
-// export interface IResponse {
-//     success: boolean,
-//     message:string, 
-//     data?: {
-//         _id?: string,
-//         note?:string,
-//         status?:string
-//     }
-// };
-
 /**
  * Methods to fetch the backend REST API
  */

@@ -129,7 +129,6 @@ const NotesContextProvider: React.FC = (props) => {
     };
 
 
-
     const contextValue: NotesCtxType = {
         items: notes,
         getAllNotes: getAllNotes, 

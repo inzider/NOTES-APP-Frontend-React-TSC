@@ -4,7 +4,6 @@ import NotesContextProvider from './store/notes.context';
 import Nav from './components/UI/Nav';
 import Home from './pages/Home';
 import NoteDetails from './pages/NoteDetails';
-// import Details from './pages/Details';
 
 
 
