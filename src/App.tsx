@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch, } from 'react-router-dom';
+import NotesContextProvider from './store/notes.context';
+
+import Nav from './components/UI/Nav';
+import Home from './pages/Home';
+import NoteDetails from './pages/NoteDetails';
+// import Details from './pages/Details';
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <NotesContextProvider >
+            <Nav />
+            <Switch>
+                
+                <Route path='/:noteId' exact>
+                    <NoteDetails />
+                    {/* <Details /> */}
+                </Route>
+
+                <Route path='/'>
+                    <Home />
+                </Route>
+
+            </Switch>
+        </NotesContextProvider>
+    );
 }
+
+
+
 
 export default App;
