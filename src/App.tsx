@@ -16,7 +16,6 @@ function App() {
                 
                 <Route path='/:noteId' exact>
                     <NoteDetails />
-                    {/* <Details /> */}
                 </Route>
 
                 <Route path='/'>
