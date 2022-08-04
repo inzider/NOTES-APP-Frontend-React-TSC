@@ -14,7 +14,7 @@ npm i
 ## Run application
 ```
 # Navigate into Frontend folder
-cd Backend
+cd Frontend
 
 # Start the application 
 npm start
