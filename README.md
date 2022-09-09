@@ -1,6 +1,6 @@
 # NOTE APP
 
-**React Frontend in typescript.**
+**Quick test of React Frontend in typescript.**
 
 
 ## Install dependencies
